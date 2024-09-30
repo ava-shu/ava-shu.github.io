@@ -1,0 +1,176 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #003366; /* Dark Blue */
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 1em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+/* Main Banner */
+.banner {
+    background-color: #FFCC00; /* Bright Yellow */
+    text-align: center;
+    padding: 2em;
+    color: #003366; /* Dark Blue */
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+.learn-more {
+    padding: 1em 2em;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.info-box {
+    flex: 1 1 30%; /* Flexbox rule for width and shrink behavior */
+    background-color: #E6E6E6; /* Light Gray */
+    padding: 1.5em;
+    margin: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.info-box a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #003366;
+    color: white;
+}
+
+/* Media Queries */
+
+/* For tablets (834px and below) */
+@media (max-width: 834px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .learn-more {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column; /* Stack content boxes vertically */
+    }
+
+    .info-box {
+        flex: 1 1 100%; /* Each box takes full width on tablets */
+        margin: 0.5em 0;
+    }
+}
+
+/* For mobile devices (430px and below) */
+@media (max-width: 430px) {
+    .navbar ul {
+        display: none; /* Hide menu on mobile */
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-box a {
+        padding: 0.5em;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Style for the American Flag centered below info boxes */
+.centered-flag {
+    text-align: center; /* Centers the image horizontally */
+    margin: 2em 0; /* Adds some space around the flag */
+}
+
+.centered-flag img {
+    width: 100px; /* Adjust the size of the flag to make it smaller */
+    height: auto;
+}
